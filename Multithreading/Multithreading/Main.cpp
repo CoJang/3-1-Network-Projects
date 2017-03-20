@@ -19,7 +19,7 @@ void make_product()
 			lock_guard<recursive_mutex> Q_lock(Q_mutex); // 보호 Lock을 건다.
 			v_queue.push_back(n);	// 생산품을 큐에 삽입
 			num++;					// 다음 생산품 생산
-			printf_s("%d\n", n);	// 삽입된 생산품 출력
+			//printf_s("%d\n", n);	// 삽입된 생산품 출력
 
 			dwTime = GetTickCount() + 100; // 다음 if문까지 대기시간 [100 = 0.1sec]
 		}
@@ -43,7 +43,7 @@ void consume_product()
 
 		if (GetTickCount() >= dwTime) // dwTime이 현재시간과 같거나 작을 경우
 		{
-			printf_s("thread 2 : %d\n", n);	// 소비된 생산품 출력
+			printf_s("Consume Result : %d\n", n);	// 소비된 생산품 출력
 			dwTime = GetTickCount() + 1000; // 다음 if문까지 대기시간 [1000 = 1sec]
 		}
 	}
