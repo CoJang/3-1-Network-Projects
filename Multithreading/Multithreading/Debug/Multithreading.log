@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\projects\network projects\multithreading\multithreading\main.cpp(38): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Multithreading.vcxproj -> D:\Projects\Network Projects\Multithreading\Debug\Multithreading.exe
+  Multithreading.vcxproj -> D:\Projects\Network Projects\Multithreading\Debug\Multithreading.pdb (Full PDB)
